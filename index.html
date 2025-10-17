@@ -54,101 +54,141 @@
 
     <div>
         <h2 class="text-xl font-semibold text-blue-600 mb-3">보유 기술</h2>
-        <div class="grid grid-cols-2 gap-4 text-sm text-gray-800">
-            <ul class="list-disc list-inside">
-                <li><strong>Languages:</strong> Java, JSP, JavaScript, TypeScript</li>
-                <li><strong>Frameworks:</strong> Spring, SpringBoot, MyBATIS, JPA, React</li>
-                <li><strong>Front-end:</strong> HTML, CSS, jQuery, Ajax, JSON</li>
-            </ul>
-            <ul class="list-disc list-inside">
-                <li><strong>Databases:</strong> Oracle, MySQL, MariaDB</li>
-                <li><strong>Tools:</strong> Eclipse, IntelliJ, VScode, DBeaver</li>
-                <li><strong>Server/Infra:</strong> Apache Tomcat, AWS</li>
-            </ul>
+        <div class="grid grid-cols-1 gap-4 text-gray-800">
+            <div>
+                <h3 class="font-bold text-gray-800">Frontend (Main)</h3>
+                <ul class="list-disc list-inside text-sm">
+                    <li><strong>Languages:</strong> TypeScript, JavaScript</li>
+                    <li><strong>Frameworks:</strong> React, Next.js, React Native</li>
+                    <li><strong>State Management:</strong> Zustand, Context API</li>
+                    <li><strong>Styling:</strong> TailwindCSS, CSS3</li>
+                    <li><strong>Build Tool:</strong> Vite</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-800">Backend (협업 가능)</h3>
+                <ul class="list-disc list-inside text-sm">
+                    <li><strong>Languages:</strong> Java</li>
+                    <li><strong>Frameworks:</strong> Spring Boot, JPA, NestJS</li>
+                    <li><strong>Auth:</strong> Spring Security, JWT</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-800">Tools & Deployment</h3>
+                <ul class="list-disc list-inside text-sm">
+                    <li><strong>Tools:</strong> IntelliJ, Eclipse, VScode, Git, Postman</li>
+                    <li><strong>Deployment:</strong> Netlify, AWS EC2, Github Actions</li>
+                    <li><strong>Databases:</strong> MySQL, MariaDB</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="border-t border-gray-200 my-6"></div>
 
     <div>
-        <h2 class="text-xl font-semibold text-blue-600 mb-3">사이드 프로젝트 및 활동</h2>
-        <div class="mb-4">
-            <h3 class="font-bold text-gray-800">(주) 룸메이트 – Roomi 프로젝트</h3>
-            <p class="text-sm text-gray-600 mb-1">2025.01 ~ 2025.07 · 스타트업 · 프론트엔드 전담</p>
+        <h2 class="text-xl font-semibold text-blue-600 mb-3">프로젝트 및 활동</h2>
+        <div class="mb-6">
+            <h2 class="font-bold text-gray-800">1. (주) 룸메이트 – Roomi 프로젝트 (핵심 기여 프로젝트)</h2>
+            <p class="text-sm text-gray-600 font-bold mb-2">- 2025.01 ~ 2025.07 · 프론트엔드 개발</p>
+            <p class="text-sm text-gray-600 mb-2">초기 스타트업에서 프론트엔드 개발을 주도하며 서비스 기획부터 배포까지 경험.</p>
+
+            <h3 class="text-sm font-bold text-gray-800">핵심 기능</h3>
             <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
-                <li>사업 방향 변경으로 인해 현재는 개인 포트폴리오로 결과물 유지 중</li>
-                <li>3인 구성 법인 스타트업에서 프론트엔드 전담 개발자로 활동</li>
                 <li>React + TypeScript 기반 UI 컴포넌트 설계 및 구현</li>
-                <li>카카오 소셜 로그인, 구글 간편 로그인(Firebase) 등 인증 기능 개발</li>
-                <li>토스, 아임포트 결제 API 연동으로 결제 기능 구축</li>
-                <li>i18n 다국어 처리 적용으로 글로벌 대응 환경 구성</li>
+                <li>OAuth 2.0 기반 소셜 로그인(카카오/구글) 구현으로 회원가입 절차 간소화</li>
+                <li>포트원 결제 API 연동으로 결제 기능 구축</li>
+                <li>i18n 라이브러리 활용한 다국어 지원 기능 구축</li>
                 <li>Zustand 상태 관리로 기능 효율화</li>
-                <li>기획–디자인–개발 사이클을 빠르게 반복하며 MVP 완성도 향상에 기여</li>
             </ul>
-            <p class="text-xs text-gray-500 mt-1">Tech Stack: React, TypeScript, TailwindCSS, Zustand, i18n, Firebase,
-                Kakao·Naver API, Toss Payments</p>
-        </div>
-    </div>
 
-    <div class="border-t border-gray-200 my-6"></div>
-
-    <div>
-        <h2 class="text-xl font-semibold text-blue-600 mb-3">개인 프로젝트</h2>
-        <div class="mb-4">
-            <h3 class="font-bold text-gray-800">Mindlog - 감정 다이어리 & 무드 트래커</h3>
-            <p class="text-sm text-gray-600 mb-1">React와 Spring Boot를 활용하여 감정 상태를 기록하고 분석할 수 있는 감정 다이어리 & 무드 트래커 웹앱.</p>
+            <h3 class="text-sm font-bold text-gray-800 mt-2">주요 성과 및 기술적 챌린지</h3>
             <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
-                <li>회원가입 및 로그인 (JWT 기반 인증)</li>
-                <li>감정 상태 선택 및 일기 작성</li>
-                <li>감정별 색상 자동 설정</li>
+                <li>OAuth 로그인 방식을 리디렉션에서 팝업 방식으로 전환하여 인증 이탈 시 상태 불일치 문제 해결</li>
+                <li>i18n 브라우저 언어 자동 감지 및 로컬스토리지 기반 사용자 선호 언어 우선 적용으로 UX 개선</li>
+            </ul>
+            <p class="text-xs text-gray-500 mt-2">
+                Tech Stack: React, TypeScript, TailwindCSS, Zustand, i18n, Firebase, Kakao·Naver API, portOne API
+            </p>
+            <p class="text-xs text-gray-500">
+                데모: <a href="https://ddjpf.kro.kr/" target="_blank" class="text-blue-500 underline">ddjpf.kro.kr</a>
+            </p>
+            <p class="text-xs text-gray-500">
+                GitHub: <a href="https://github.com/ddj82/roomi_portfolio" target="_blank" class="text-blue-500 underline">GitHub</a>
+            </p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="font-bold text-gray-800">2. Mindlog - 감정 다이어리 & 무드 트래커</h2>
+            <p class="text-sm text-gray-600 font-bold mb-2">- 개인 프로젝트 (풀스택)</p>
+            <p class="text-sm text-gray-600 mb-2">감정 상태를 기록하고 분석하는 웹앱. 기획/디자인/개발/배포를 혼자 수행.</p>
+
+            <h3 class="text-sm font-bold text-gray-800">핵심 기능</h3>
+            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                <li>JWT + RefreshToken 기반 인증 시스템 구현</li>
+                <li>감정별 자동 색상 매칭 알고리즘으로 시각적 UX 개선</li>
                 <li>캘린더 기반 감정 기록 조회</li>
-                <li>기획–디자인–개발 1인 프로젝트</li>
+                <li>Spring Security + CORS 설정으로 안전한 프론트-백 통신</li>
             </ul>
-            <p class="text-xs text-gray-500 mt-1">Tech Stack: React + Vite, Zustand, TailwindCSS, Spring Boot, Spring Security, JWT, JPA, MySQL, Netlify, EC2</p>
-        </div>
-        <div class="mb-4">
-            <h3 class="font-bold text-gray-800">게임 아이템 옵션 계산기</h3>
-            <p class="text-sm text-gray-600 mb-1">실사용 목적의 게임 아이템 세트 옵션 자동 계산 웹앱.</p>
-            <p class="text-sm text-gray-600 mb-1">기존 계산기의 불편함을 개선하여 더 직관적이고 효율적인 계산 환경을 제공.</p>
+
+            <h3 class="text-sm font-bold text-gray-800 mt-2">주요 성과 및 기술적 챌린지</h3>
             <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
-                <li>아이템 세트 및 능력치 옵션 자동 합산</li>
-                <li>옵션 변경 시 즉시 비교·결과 출력</li>
-                <li>토글 UI를 통한 세트별 직관적 선택</li>
-                <li>다크 모드 지원</li>
-                <li>커뮤니티 홍보를 통한 실제 유저 사용중</li>
+                <li>Vite 빌드 도구 사용으로 개발 서버 시작 시간 단축</li>
+                <li>Netlify + EC2 분리 배포로 프론트/백 독립적 확장성 확보</li>
             </ul>
-            <p class="text-xs text-gray-500 mt-1">Tech Stack: React + Vite, Zustand, TailwindCSS, Github Actions</p>
+
+            <p class="text-xs text-gray-500 mt-2">Tech Stack: React, Vite, Zustand, Spring Boot, JPA, MySQL</p>
+            <p class="text-xs text-gray-500">배포: Netlify (Frontend), AWS EC2 (Backend)</p>
+            <p class="text-xs text-gray-500">
+                데모: <a href="https://mindlog-home.netlify.app/" target="_blank" class="text-blue-500 underline">mindlog-home.netlify.app</a>
+            </p>
+            <p class="text-xs text-gray-500">
+                GitHub: <a href="https://github.com/ddj82/mindlog_frontend" target="_blank" class="text-blue-500 underline">GitHub</a>
+            </p>
         </div>
-    </div>
 
-    <div class="border-t border-gray-200 my-6"></div>
+        <div class="mb-6">
+            <h2 class="font-bold text-gray-800">3. 게임 아이템 옵션 계산기</h2>
+            <p class="text-sm text-gray-600 font-bold mb-2">- 개인 프로젝트</p>
+            <p class="text-sm text-gray-600">게임 아이템 세트 옵션을 자동 계산하는 실사용 목적 웹앱.</p>
+            <p class="text-sm text-gray-600 mb-2">커뮤니티 홍보를 통해 실제 유저 사용 중.</p>
 
+            <h3 class="text-sm font-bold text-gray-800">핵심 기능</h3>
+            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                <li>아이템 세트별 능력치 자동 합산 및 실시간 비교</li>
+                <li>토글 UI로 세트 선택 시 즉각적인 결과 출력</li>
+                <li>다크모드 지원으로 사용자 편의성 향상</li>
+            </ul>
 
-    <div>
-        <h2 class="text-xl font-semibold text-blue-600 mb-3">프로젝트 경험</h2>
-        <div class="mb-4">
-            <h3 class="font-bold text-gray-800">bichena 프로젝트 <span
-                    class="text-sm text-gray-500">(2024.04 ~ 2024.05)</span></h3>
-            <p class="text-sm text-gray-600 mb-1">전통주 판매 사이트 / 팀원 7명 / 팀장</p>
+            <h3 class="text-sm font-bold text-gray-800 mt-2">주요 성과 및 기술적 챌린지</h3>
+            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                <li>Github Actions CI/CD 파이프라인 구축으로 배포 자동화</li>
+                <li>커뮤니티 반응: "기존 계산기보다 편하다"는 긍정 피드백 다수</li>
+            </ul>
+
+            <p class="text-xs text-gray-500 mt-2">Tech Stack: React, Vite, Zustand, TailwindCSS, Github Actions</p>
+            <p class="text-xs text-gray-500">배포: Netlify</p>
+            <p class="text-xs text-gray-500">
+                데모: <a href="https://ddj82.github.io/maple/" target="_blank" class="text-blue-500 underline">ddj82.github.io/maple</a>
+            </p>
+            <p class="text-xs text-gray-500">
+                GitHub: <a href="https://github.com/ddj82/maple" target="_blank" class="text-blue-500 underline">GitHub</a>
+            </p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="font-bold text-gray-800">
+                4. 초기 학습 프로젝트 <span class="text-sm text-gray-500">(2024.04 ~ 2024.05)</span>
+            </h2>
+            <p class="text-sm text-gray-600 mb-2">개발자 학습 과정에서 진행한 팀 프로젝트 2건</p>
+
             <ul class="list-disc list-inside text-sm text-gray-700">
-                <li>상품관리, 상품후기, QNA 게시판 CRUD 구현</li>
-                <li>상품 상세페이지 개발</li>
-                <li>팀장으로 전체 일정 관리 및 발표</li>
+                <li>전통주 판매 사이트 (팀장, 상품 관리 CRUD)</li>
+                <li>스터디룸 예약 시스템 (팀장, 룸 CRUD, 예약 중복 방지 로직)</li>
             </ul>
-            <p class="text-xs text-gray-500 mt-1">Tech Stack: Java, Javascript, Spring, Spring framework, MySQL,
-                AWS, Apache Tomcat, Ajax</p>
+            <p class="text-xs text-gray-500 mt-2">Tech Stack: Java, Javascript, Spring, Spring framework, MySQL, Ajax</p>
         </div>
-        <div class="mb-4">
-            <h3 class="font-bold text-gray-800">mocadream 프로젝트 <span
-                    class="text-sm text-gray-500">(2024.03 ~ 2024.04)</span></h3>
-            <p class="text-sm text-gray-600 mb-1">스터디 룸 대여 / 팀원 7명 / 팀장</p>
-            <ul class="list-disc list-inside text-sm text-gray-700">
-                <li>파일 업로드 기능을 이용한 방 추가 기능</li>
-                <li>예약 현황 리스트 및 중복 예약 방지, 입실 처리</li>
-                <li>팀장으로 전체 일정 관리 및 발표</li>
-            </ul>
-            <p class="text-xs text-gray-500 mt-1">Tech Stack: Java, JSP, Oracle, Ajax, Apache Tomcat</p>
-        </div>
+
     </div>
 
     <div class="border-t border-gray-200 my-6"></div>
